@@ -1,7 +1,7 @@
 const fs = require("fs");
 const strings = require("./customStrings.json");
 let result;
-fs.readFile("./customStrings.json", 'utf8', function (err,data) {
+fs.readFile("./messages.properties", 'utf8', function (err,data) {
   if (err) {
     return console.log(err);
   }
@@ -9,7 +9,7 @@ fs.readFile("./customStrings.json", 'utf8', function (err,data) {
     result = data.replace(string.original, string.new);
   })
 
-  fs.writeFile("./customStrings.json", result, 'utf8', function (err) {
+  fs.writeFile("./messages.properties", result, 'utf8', function (err) {
      if (err) return console.log(err);
   });
 });
