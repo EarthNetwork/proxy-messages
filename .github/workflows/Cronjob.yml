@@ -9,6 +9,7 @@ jobs:
     steps:
       - name: Télécharger les fichiers
         uses: wei/wget@v1
+        with:
           args: -O messages.properties https://raw.githubusercontent.com/SpigotMC/BungeeCord/master/proxy/src/main/resources/messages.properties
       - name: Setup Node.JS
         uses: actions/setup-node@v2
