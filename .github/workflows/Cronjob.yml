@@ -26,6 +26,5 @@ jobs:
           
           git config --global user.name "github-actions"
           git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add messages.properties
-          git commit --allow-empty -m "Mise à jour"
+          git commit messages.properties --allow-empty -m "Mise à jour"
           git push
