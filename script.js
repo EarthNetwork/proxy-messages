@@ -1,5 +1,5 @@
 const fs = require("fs");
-const strings = require("customStrings.json");
+const strings = require("./customStrings.json");
 let result;
 fs.readFile("./customStrings.json", 'utf8', function (err,data) {
   if (err) {
