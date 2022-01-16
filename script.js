@@ -7,7 +7,7 @@ fs.readFile("./customStrings.json", 'utf8', function (err,data) {
   }
   strings.forEach(string => {
     result = data.replace(string.original, string.new);
-  }
+  })
 
   fs.writeFile("./customStrings.json", result, 'utf8', function (err) {
      if (err) return console.log(err);
