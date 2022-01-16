@@ -8,6 +8,8 @@ jobs:
     name: Modifier les messages
     runs-on: ubuntu-latest
     steps:
+      - name: Cloner le repo
+        uses: actions/checkout@v2
       - name: Télécharger les fichiers
         uses: wei/wget@v1
         with:
