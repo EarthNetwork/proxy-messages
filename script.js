@@ -7,7 +7,7 @@ strings.forEach(async string => {
   if (err) {
     return console.log(err);
   }
-  result = await data.replace(string.original, string.new);
+  result = await data.replaceAll(string.original, string.new);
 
   await fs.writeFile("./messages.properties", result, 'utf8', function (err) {
      if (err) return console.log(err);
