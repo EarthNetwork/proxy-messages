@@ -1,1 +1,1 @@
-[{"original" : "\u00a7cKicked whilst connecting to {0}:", "new": " "}, {"original": "Alert", "new": "Alerte"}, {"original": "You are already connected to this server!", "new": "Vous êtes déjà connecté à ce serveur !"}]
+[{"original" : "\u00a7cKicked whilst connecting to {0}: {1}", "new": "{1}"}, {"original": "\u00a78[\u00a74Alert\u00a78]\u00a7r ", "new": "\u00a78[\u00a74Alerte\u00a78]\u00a7r "}, {"original": "You are already connected to this server!", "new": "Vous êtes déjà connecté à ce serveur !"}]
