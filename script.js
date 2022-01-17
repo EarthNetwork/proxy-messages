@@ -1,6 +1,6 @@
 const fs = require("fs");
 fs.readFile('./customStrings.json', 'utf8', (err, strings) => {
-    const orignal = strings.replaceAll("\\\\", "\\\\\\\\");
+    const original = strings.replaceAll("\\\\", "\\\\\\\\");
     let result;
     fs.readFile("./messages.properties", 'utf8', async function (err, data) {
         if (err) {
