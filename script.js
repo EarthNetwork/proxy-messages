@@ -2,7 +2,7 @@ const fs = require("fs");
 const strings = require("./customStrings.json");
 let result;
 strings.forEach(async string => {
-  console.log("String actuelle: " + string);
+  console.log("String actuelle: " + string.toString());
   await fs.readFile("./messages.properties", 'utf8', function (err,data) {
   if (err) {
     return console.log(err);
